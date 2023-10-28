@@ -30,7 +30,7 @@ class _TaskScreenState extends State<TaskScreen> {
               cursorColor: Colors.red,
               cursorHeight: 36,
               cursorWidth: 22,
-              cursorRadius: const Radius.circular(18),
+              cursorRadius: const Radius.circular(30),
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock_open_outlined,color:white,),
                 suffixIcon: Icon(Icons.remove_red_eye_rounded,color: white,),
