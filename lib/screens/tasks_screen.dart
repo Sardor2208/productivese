@@ -21,19 +21,19 @@ class _TaskScreenState extends State<TaskScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.name,
               onChanged: (value){
                 text = value;
                 setState(() {});
               },
               // autofocus: true,
-              cursorColor: Colors.amberAccent,
-              cursorHeight: 38,
-              cursorWidth: 20,
+              cursorColor: Colors.red,
+              cursorHeight: 36,
+              cursorWidth: 22,
               cursorRadius: const Radius.circular(18),
               decoration: const InputDecoration(
-                prefixIcon: Icon(Icons.lock,color:white,),
-                suffixIcon: Icon(Icons.remove_red_eye_outlined,color: white,),
+                prefixIcon: Icon(Icons.lock_open_outlined,color:white,),
+                suffixIcon: Icon(Icons.remove_red_eye_rounded,color: white,),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
                     color: white
@@ -52,12 +52,12 @@ class _TaskScreenState extends State<TaskScreen> {
                   ),
                 ),
               ),
-              style: const TextStyle(color: white,fontSize: 38),
+              style: const TextStyle(color: white,fontSize: 30),
             ),
             const SizedBox(
-              height: 50,
+              height: 70,
             ),
-            Text(text,style: const TextStyle(color: white),),
+            Text(text,style: const TextStyle(color: white,fontSize: 30),),
           ],
         ),
       ),
